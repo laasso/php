@@ -3,8 +3,8 @@
 $numero = 23;
 $numero2 = 24;
 
-echo $numero + $numero2;
+$resultado =  $numero + $numero2;
 
-echo "Hola mundo de asix";
+echo "Hola mundo de asix el resultado de la suma es: "$resultado;
 ?>
 

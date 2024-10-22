@@ -14,6 +14,6 @@ La versionde PHP es la 8.x
 
 ## Instalacion en servidor Ubuntu Server
 
-``bash
+```bash
 sudo apt install php8.1 libapache2-mod-php8.1
 ```

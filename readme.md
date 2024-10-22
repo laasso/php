@@ -11,3 +11,9 @@ La versionde PHP es la 8.x
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
+
+## Instalacion en servidor Ubuntu Server
+
+``bash
+sudo apt install php8.1 libapache2-mod-php8.1
+```

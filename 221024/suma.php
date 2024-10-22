@@ -6,9 +6,9 @@
 
 <?php
 
-$numero = $_['num1'];
+$numero = $_GET['num1'];
 
-$numero2 = $_['num2'];
+$numero2 = $_GET['num2'];
 
 $resultado =  $numero + $numero2;
 

@@ -13,6 +13,7 @@ $resultado =  $numero + $numero2;
 
 echo "Hola mundo de asix el resultado de la suma es: ",$resultado;
 ?>
+
 </body>
 </html>
 

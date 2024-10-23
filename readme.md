@@ -1,4 +1,4 @@
-### IAW ASIX 24 
+# IAW ASIX 24
 
 ## Proposito del repositorio
 
@@ -6,7 +6,7 @@ Enviar codigo a mi servidor apache mediante git utilizando CD/CI.
 
 Creado para la asignatura de Implementacion de Aplicaciones Web el grado superior de Administracion de Sistemas y redes.
 
-La versionde PHP es la 8.1
+La version de PHP es la 8.1
 
 Estoy usando una maquina con Ubuntu Server 22.04
 
@@ -24,7 +24,5 @@ sudo apt install php8.1 libapache2-mod-php8.1
 ## Index de clases
 Enlaces a las carpetas con los arhivos de las clases y los resumenes
 
-### [22/10/24](https://github.com/laasso/php/tree/main/221024)
-
-Instalacion de PHP8.1 y ejemplos basicos de GET i variables
-
+### Primera clase [22/10/24](https://github.com/laasso/php/tree/main/221024)
+>Instalacion de PHP8.1 y ejemplos basicos de GET i variables

@@ -22,6 +22,7 @@ sudo apt install php8.1 libapache2-mod-php8.1
 ```
 
 ## Index de clases
+Enlaces a las carpetas con los arhivos de las clases y los resumenes
 
 ### [22/10/24](https://github.com/laasso/php/tree/main/221024)
 

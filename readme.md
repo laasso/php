@@ -20,3 +20,10 @@ Estoy usando una maquina con Ubuntu Server 22.04
 ```bash
 sudo apt install php8.1 libapache2-mod-php8.1
 ```
+
+## Index de clases
+
+# [22/10/24](https://github.com/laasso/php/tree/main/221024)
+
+Instalacion de PHP8.1 y ejemplos basicos de GET i variables
+

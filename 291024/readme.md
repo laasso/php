@@ -46,7 +46,7 @@ max_file_uploads = 10
 
 En la carpeta php se encuentran los fichero suma.php y form.php
 
-![suma.php](php/suma.php)
+[suma.php](php/suma.php)
 
 ```php
 <?php
@@ -65,7 +65,7 @@ echo "La suma es:", $resultado;
 
 ```
 
-form.php
+[form.php](php/form.php)
 
 ```php
 <html>

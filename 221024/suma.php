@@ -1,4 +1,4 @@
-?php
+<?php
 
 $numero = $_GET['num1'];
 

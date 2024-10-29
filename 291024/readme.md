@@ -85,3 +85,8 @@ echo "La suma es:", $resultado;
 </html>
 ```
 
+## Sintaxis PHP
+
+Para finalizar la clase hemos visto la sintaxis basica de PHP
+
+[sintaxis.php](php/sintaxis.php)

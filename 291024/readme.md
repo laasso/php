@@ -41,3 +41,47 @@ file_uploads = Off/O
 upload_max_filesize = 2M
 max_file_uploads = 10
 ```
+
+## Formulario HTML que ejecuta PHP
+
+En la carpeta php se encuentran los fichero suma.php y form.php
+
+suma.php
+
+```php
+<?php
+
+$numero = $_GET['num1'];
+
+$numero2 = $_GET['num2'];
+
+$resultado =  $numero + $numero2;
+
+echo "Hola mundo de asix<br/>";
+
+echo "La suma es:", $resultado;
+
+?>
+
+```
+
+form.php
+
+```php
+<html>
+<head>
+<title>Mi primer PHP</title>
+</head>
+<body>
+
+<form action="suma.php" method="GET">
+<input type="text" name="num1"/>
+<input type="text" name="num2"/>
+<input type="submit" name="submit" value ="sumar"/>
+</form>
+
+
+</body>
+</html>
+```
+

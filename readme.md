@@ -26,3 +26,7 @@ Enlaces a las carpetas con los arhivos de las clases y los resumenes
 
 ### Primera clase [22/10/24](https://github.com/laasso/php/tree/main/221024)
 >Instalacion de PHP8.1 y ejemplos basicos de GET i variables
+
+
+### Segunda clase [29/10/24](https://github.com/laasso/php/tree/main/291024)
+>Configuracion PHP i sintaxis basica

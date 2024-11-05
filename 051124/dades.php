@@ -27,7 +27,7 @@ if ($sexe == "H") {
 
 <br/>
 
-if ($trebllar == "Si") {
+if ($treballar == "Si") {
 	echo "Estas currando";
 } else {
 	echo "No estas currando";

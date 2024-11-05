@@ -18,7 +18,7 @@ echo "Traballar: " . $treballar;
 
 if ($sexe == "H") {
 	echo "Tu sexo es Masculino";
-else } else {
+ } else {
 	echo "Tu sexo es Femenino:";
 }
 

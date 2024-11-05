@@ -1,15 +1,23 @@
 <?php
 
-$numero = $_GET['num1'];
+$nombre = $_GET['name'];
+$adreca = $_GET['adreca'];
+$mail = $_GET['mail'];
+$telefono = $_GET['telefon'];
+$sexe = $_GET['sexe'];
+$treballar = $_GET['treballar'];
 
-$numero2 = $_GET['num2'];
 
-$resultado =  $numero + $numero2;
 
-echo "Hola mundo de asix<br/>";
+echo "Tus datos son:<br/>";
 
-echo "La suma es:", $resultado;
 
-?>
+echo "Nombre: $nombre :<br/>";
+echo "adreca: $adreca :<br/>";
+echo "mail: $mail :<br/>";
+echo "telefon: $telefon :<br/>";
+echo "sexe: $sexe :<br/>";
+echo "traballar: $treballar :<br/>";
+i>
 
 

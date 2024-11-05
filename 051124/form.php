@@ -16,7 +16,7 @@ Telefon: <input type="telefon" name="telefon"/><br/>
 
 Data Naixement:<input type="text" name="datanaix"/><br/>
 Sexe:
-<input type="radio" name="sexe" value="Hi"/>Home<br/>
+<input type="radio" name="sexe" value="H"/>Home<br/>
 <input type="radio" name="sexe" value="D"/>Dona<br/><br/>
 Treballas:
 <select name="treballar">

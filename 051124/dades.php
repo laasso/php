@@ -16,5 +16,11 @@ echo "Teléfono: " . $telefono . "<br/>";
 echo "Sexo: " . $sexe . "<br/>";
 echo "Traballar: " . $treballar;
 
+if ($sexe == "H") {
+	echo "Tu sexo es Masculino";
+else } else {
+	echo "Tu sexo es Femenino:";
+}
+
 ?>
 

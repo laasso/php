@@ -12,12 +12,12 @@ $treballar = $_GET['treballar'];
 echo "Tus datos son:<br/>";
 
 
-echo "Nombre: $nombre :<br/>";
-echo "adreca: $adreca :<br/>";
-echo "mail: $mail :<br/>";
-echo "telefon: $telefon :<br/>";
-echo "sexe: $sexe :<br/>";
-echo "traballar: $treballar :<br/>";
-i>
+echo "Nombre: ",  $nombre:;
+echo "adreca:", $adreca :;
+echo "mail" ,  $mail :;
+echo "telefon:",  $telefon ;
+echo "sexe:", $sexe :;
+echo "traballar:",  $treballar;
+>
 
 

@@ -4,7 +4,7 @@
 </head>
 <body>
 Introdueix les seguents dades: <br/>
-<form action="dades.php" method="GET"><br/>
+<form action="resultado.php" method="GET"><br/>
 
 
 

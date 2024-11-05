@@ -12,7 +12,7 @@ while ($primo && $i<$numero) {
 if ($primo) {
 	echo "EL numero $numero es primo";
 } else { 
-	echo "No es primo:"
+	echo "No es primo:";
 }
 
 

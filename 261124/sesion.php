@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Contar Letras "a" en PHP</title>
+    <title>Contar Letras en PHP</title>
 </head>
 <body>
     <form method="get" action="">
@@ -10,33 +10,43 @@
     </form>
 
     <?php
-    #creamos sesion
+    # Iniciamos la sesión
     session_start();
 
     if (isset($_GET['frase'])) {
-        # Mostramos el contenido del array
+        # Mostramos el contenido del array GET
         var_dump($_GET);
 
-        # Convertimos el string enviado en un array
+        # Convertimos el string enviado en un array de caracteres
         $frasearray = str_split($_GET['frase']);
         echo "<br/>";
         
-        # Lo mostramos:
+        # Mostramos el array convertido
         var_dump($frasearray);
+
+        # Recuperamos o inicializamos el contador de letras
+        if (!isset($_SESSION['contador_letras'])) {
+            $_SESSION['contador_letras'] = [];
+        }
         
-        # Contamos las letras "a"
-        $contador_a = $_SESSION['contador_a'];
-
+        # Procesamos cada letra
         foreach ($frasearray as $letra) {
-            if (strtolower($letra) === 'a') {
-                $contador_a++;
-
+            if (ctype_alpha($letra)) { // Solo contar letras
+                $letra = strtolower($letra); // Convertir a minúsculas
+                if (!isset($_SESSION['contador_letras'][$letra])) {
+                    $_SESSION['contador_letras'][$letra] = 0;
+                }
+                $_SESSION['contador_letras'][$letra]++;
             }
         }
 
-        echo "<br/>La letra 'a' aparece $contador_a veces en la frase.";
-        $_SESSION['contador_a'] = $contador_a;
+        # Mostramos los resultados
+        echo "<h3>Conteo de letras:</h3>";
+        foreach ($_SESSION['contador_letras'] as $letra => $cantidad) {
+            echo "Letra '$letra': $cantidad veces<br/>";
+        }
     }
     ?>
 </body>
 </html>
+

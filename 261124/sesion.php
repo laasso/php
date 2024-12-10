@@ -10,29 +10,21 @@
     </form>
 
     <?php
-    # Iniciamos la sesión
     session_start();
 
     if (isset($_GET['frase'])) {
-        # Mostramos el contenido del array GET
-        var_dump($_GET);
-
-        # Convertimos el string enviado en un array de caracteres
         $frasearray = str_split($_GET['frase']);
         echo "<br/>";
         
-        # Mostramos el array convertido
         var_dump($frasearray);
 
-        # Recuperamos o inicializamos el contador de letras
         if (!isset($_SESSION['contador_letras'])) {
             $_SESSION['contador_letras'] = [];
         }
         
-        # Procesamos cada letra
         foreach ($frasearray as $letra) {
-            if (ctype_alpha($letra)) { // Solo contar letras
-                $letra = strtolower($letra); // Convertir a minúsculas
+            if (ctype_alpha($letra)) { 
+                $letra = strtolower($letra); 
                 if (!isset($_SESSION['contador_letras'][$letra])) {
                     $_SESSION['contador_letras'][$letra] = 0;
                 }
@@ -40,10 +32,9 @@
             }
         }
 
-        # Mostramos los resultados
-        echo "<h3>Conteo de letras:</h3>";
+        echo "<h3>Contadores:</h3>";
         foreach ($_SESSION['contador_letras'] as $letra => $cantidad) {
-            echo "Letra '$letra': $cantidad veces<br/>";
+            echo "Letra '$letra': $cantidad<br/>";
         }
     }
     ?>

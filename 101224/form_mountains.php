@@ -17,7 +17,7 @@ $data_ascens = $_GET['data_ascens'] ?? 'No especificada';
 $dificultat = $_GET['dificultat'] ?? 'No especificada';
 $activitats = $_GET['activitats'] ?? [];
 
-// Desa les dades en un array associatiu
+// Desa les dades en un array associatiu amb l'ID com a clau
 $_SESSION['muntanyes'][$id] = [
     'nom_muntanya' => $nom_muntanya,
     'altura' => $altura,
@@ -26,19 +26,8 @@ $_SESSION['muntanyes'][$id] = [
     'activitats' => $activitats
 ];
 
-// Mostra un resum
-echo "<h1>Dades Rebudes</h1>";
-echo "<p><strong>ID:</strong> $id</p>";
-echo "<p><strong>Nom de la muntanya:</strong> $nom_muntanya</p>";
-echo "<p><strong>Altura:</strong> $altura metres</p>";
-echo "<p><strong>Data de l'últim ascens:</strong> $data_ascens</p>";
-echo "<p><strong>Dificultat:</strong> $dificultat</p>";
-echo "<p><strong>Activitats seleccionades:</strong> " . implode(', ', $activitats) . "</p>";
-
-echo "<hr>";
-
 // Mostra totes les dades introduïdes fins ara
-echo "<h2>Totes les dades introduïdes</h2>";
+echo "<h1>Totes les dades introduïdes</h1>";
 if (!empty($_SESSION['muntanyes'])) {
     echo "<ul>";
     foreach ($_SESSION['muntanyes'] as $key => $muntanya) {

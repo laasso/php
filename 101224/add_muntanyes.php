@@ -26,8 +26,8 @@
     </select>
 
     <label>Activitats disponibles:</label>
-    <input type="checkbox" id="senderisme" name="activitats[]" value="senderisme">
     <label for="senderisme">Senderisme</label>
+    <input type="checkbox" id="senderisme" name="activitats[]" value="senderisme">
     <input type="checkbox" id="escalada" name="activitats[]" value="escalada">
     <label for="escalada">Escalada</label>
     <input type="checkbox" id="fotografia" name="activitats[]" value="fotografia">

@@ -60,3 +60,4 @@ $muntanya = $_SESSION['muntanyes'][$id];
     <a href="index.php">Tornar a la llista</a>
 </body>
 </html>
+    

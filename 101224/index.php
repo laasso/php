@@ -31,6 +31,7 @@ if (!isset($_SESSION['muntanyes'])) {
                         <img src="<?= htmlspecialchars($muntanya['foto_muntanya']) ?>" alt="Foto de <?= htmlspecialchars($muntanya['nom_muntanya']) ?>">
                     <?php endif; ?>
                     <br>
+                    <br>
                     <a href="delete.php?id=<?= urlencode($id) ?>">Eliminar</a>
                     <a href="edit_muntanyes.php?id=<?= urlencode($id) ?>">Editar</a>
                 </li>

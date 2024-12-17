@@ -109,3 +109,152 @@ button, .add-btn {
 button:hover, .add-btn:hover {
     background-color: #005bb5;
 }
+
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px; /* Limitar el ancho de la lista */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos */
+}
+
+ul li {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* Tres recuadros por fila */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Para no desbordar por el padding */
+}
+
+ul li img {
+    width: 150px; /* Tamaño fijo para todas las imágenes */
+    height: 150px;
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #0066cc;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+ul li .data {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    width: 100%;
+    margin-top: 10px;
+}
+
+ul li .data div {
+    flex: 1;
+    margin-right: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+ul li .data div:last-child {
+    margin-right: 0;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select, form button, form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form button {
+    background-color: #0066cc;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+button, .add-btn {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+button:hover, .add-btn:hover {
+    background-color: #005bb5;
+}

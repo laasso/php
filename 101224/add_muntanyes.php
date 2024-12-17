@@ -28,10 +28,10 @@
     <label>Activitats disponibles:</label>
     <label for="senderisme">Senderisme</label>
     <input type="checkbox" id="senderisme" name="activitats[]" value="senderisme">
-    <input type="checkbox" id="escalada" name="activitats[]" value="escalada">
     <label for="escalada">Escalada</label>
-    <input type="checkbox" id="fotografia" name="activitats[]" value="fotografia">
+    <input type="checkbox" id="escalada" name="activitats[]" value="escalada">
     <label for="fotografia">Fotografia</label>
+    <input type="checkbox" id="fotografia" name="activitats[]" value="fotografia"
 
     <label for="foto_muntanya">URL de la foto de la muntanya:</label>
     <input type="url" id="foto_muntanya" name="foto_muntanya" placeholder="https://ejemplo.com/foto.jpg">

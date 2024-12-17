@@ -83,4 +83,11 @@ if (!isset($_SESSION['muntanyes'])) {
 
                     <a href="delete.php?id=<?= urlencode($id) ?>">Eliminar</a>
                     <a href="edit_muntanyes.php?id=<?= urlencode($id) ?>">Editar</a>
- 
+                </li>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <p>No hay montañas registradas. <a href="add_muntanyes.php">Añade una aquí</a>.</p>
+        <?php endif; ?>
+    </ul>
+</body>
+</html>

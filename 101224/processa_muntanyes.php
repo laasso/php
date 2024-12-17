@@ -12,6 +12,7 @@ $altura = $_POST['altura'] ?? '';
 $data_ascens = $_POST['data_ascens'] ?? '';
 $dificultat = $_POST['dificultat'] ?? '';
 $activitats = isset($_POST['activitats']) ? implode(", ", $_POST['activitats']) : '';
+$foto_muntanya = $_POST['foto_muntanya'] ?? ''; // Capturar la URL de la imagen
 
 // Validar que todos los datos requeridos están presentes
 if ($nom_muntanya && $altura && $data_ascens && $dificultat) {
@@ -21,7 +22,8 @@ if ($nom_muntanya && $altura && $data_ascens && $dificultat) {
         'altura' => $altura,
         'data_ascens' => $data_ascens,
         'dificultat' => $dificultat,
-        'activitats' => $activitats
+        'activitats' => $activitats,
+        'foto_muntanya' => $foto_muntanya // Guardar la URL en la sesión
     ];
 }
 

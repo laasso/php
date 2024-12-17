@@ -42,6 +42,22 @@
 
         <button type="submit">Enviar</button>
     </form>
+
+            // Mostrar todas las montañas
+        echo "<h1>Les muntanyes introduïdes</h1>";
+        echo "<ul>";
+        foreach ($_SESSION['muntanyes'] as $id => $muntanya) {
+            echo "<li>";
+            echo "Nom: " . $muntanya['nom_muntanya'] . "<br>";
+            echo "Altura: " . $muntanya['altura'] . " metres<br>";
+            echo "Data d'ascens: " . $muntanya['data_ascens'] . "<br>";
+            echo "Dificultat: " . $muntanya['dificultat'] . "<br>";
+            echo "Activitats: " . $muntanya['activitats'] . "<br>";
+            echo "<a href='edit.php?nom_muntanya=" . urlencode($muntanya['nom_muntanya']) . "'>Editar</a> | ";
+            echo "<a href='delete.php?nom_muntanya=" . urlencode($muntanya['nom_muntanya']) . "'>Eliminar</a>";
+            echo "</li>";
+        }
+echo "</ul>";
 </body>
 </html>
 

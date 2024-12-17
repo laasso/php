@@ -7,41 +7,24 @@ if (!isset($_SESSION['muntanyes'])) {
 }
 
 // Obtener los datos del formulario
-$nom_muntanya = isset($_GET['nom_muntanya']) ? $_GET['nom_muntanya'] : '';
-$altura = isset($_GET['altura']) ? $_GET['altura'] : '';
-$data_ascens = isset($_GET['data_ascens']) ? $_GET['data_ascens'] : '';
-$dificultat = isset($_GET['dificultat']) ? $_GET['dificultat'] : '';
-$activitats = isset($_GET['activitats']) ? $_GET['activitats'] : [];
+$nom_muntanya = $_POST['nom_muntanya'] ?? '';
+$altura = $_POST['altura'] ?? '';
+$data_ascens = $_POST['data_ascens'] ?? '';
+$dificultat = $_POST['dificultat'] ?? '';
+$activitats = isset($_POST['activitats']) ? implode(", ", $_POST['activitats']) : '';
 
-// Acción: agregar un nuevo registro
+// Validar que todos los datos requeridos están presentes
 if ($nom_muntanya && $altura && $data_ascens && $dificultat) {
-    // Crear un ID único para cada muntanya
     $id = uniqid();
     $_SESSION['muntanyes'][$id] = [
         'nom_muntanya' => $nom_muntanya,
         'altura' => $altura,
         'data_ascens' => $data_ascens,
         'dificultat' => $dificultat,
-        'activitats' => implode(", ", $activitats) // Almacenar las actividades como texto
+        'activitats' => $activitats
     ];
 }
 
-// Mostrar todas las montañas
-echo "<h1>Les muntanyes introduïdes</h1>";
-echo "<ul>";
-foreach ($_SESSION['muntanyes'] as $id => $muntanya) {
-    echo "<li>";
-    echo "Nom: " . $muntanya['nom_muntanya'] . "<br>";
-    echo "Altura: " . $muntanya['altura'] . " metres<br>";
-    echo "Data d'ascens: " . $muntanya['data_ascens'] . "<br>";
-    echo "Dificultat: " . $muntanya['dificultat'] . "<br>";
-    echo "Activitats: " . $muntanya['activitats'] . "<br>";
-    echo "<a href='edit.php?nom_muntanya=" . urlencode($muntanya['nom_muntanya']) . "'>Editar</a> | ";
-    echo "<a href='delete.php?nom_muntanya=" . urlencode($muntanya['nom_muntanya']) . "'>Eliminar</a>";
-    echo "</li>";
-}
-echo "</ul>";
-
-echo "<a href='formulari_muntanyes.html'>Afegir més muntanyes</a>";
-?>
-
+// Redirigir a la página principal
+header('Location: index.php');
+exit;

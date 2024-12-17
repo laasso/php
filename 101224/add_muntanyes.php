@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulari Muntanyes</title>
+    <title>Afegir Muntanya</title>
 </head>
 <body>
-    <h1>Formulari sobre Muntanyes</h1>
-    <form action="processa_muntanyes.php" method="get">
+    <h1>Afegir una nova muntanya</h1>
+    <form action="processa_muntanyes.php" method="post">
         <label for="nom_muntanya">Nom de la muntanya:</label>
         <input type="text" id="nom_muntanya" name="nom_muntanya" required>
         <br><br>
@@ -40,8 +40,8 @@
         <label for="fotografia">Fotografia</label>
         <br><br>
 
-        <button type="submit">Enviar</button>
+        <button type="submit">Afegir muntanya</button>
     </form>
+    <a href="index.php">Tornar a la llista</a>
 </body>
 </html>
-

@@ -12,7 +12,10 @@ if (!isset($_SESSION['muntanyes'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Montañas</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <h1>Gestión de Montañas</h1>

@@ -13,8 +13,14 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #00cc33;
     margin-bottom: 20px;
+    .poppins-black {
+        font-family: "Poppins", serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
 }
 
 ul {
@@ -31,7 +37,7 @@ ul li {
 }
 
 ul li a {
-    color: #0066cc;
+    color: #00cc33;
     text-decoration: none;
     margin-right: 10px;
     font-weight: bold;
@@ -65,7 +71,7 @@ form input, form select, form button, form textarea {
 }
 
 form button {
-    background-color: #0066cc;
+    background-color: #00cc33;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -75,11 +81,11 @@ form button {
 }
 
 form button:hover {
-    background-color: #005bb5;
+    background-color: #349208;
 }
 
 a {
-    color: #0066cc;
+    color: #00cc33;
     text-decoration: none;
 }
 
@@ -95,7 +101,7 @@ a:hover {
 }
 
 button, .add-btn {
-    background-color: #0066cc;
+    background-color: #00cc33;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -107,7 +113,7 @@ button, .add-btn {
 }
 
 button:hover, .add-btn:hover {
-    background-color: #005bb5;
+    background-color: #00cc33;
 }
 
 
@@ -162,7 +168,7 @@ ul li img {
 }
 
 ul li a {
-    color: #0066cc;
+    color: #00cc33;
     text-decoration: none;
     margin-right: 10px;
     font-weight: bold;
@@ -214,7 +220,7 @@ form input, form select, form button, form textarea {
 }
 
 form button {
-    background-color: #0066cc;
+    background-color: #00cc33;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -224,11 +230,11 @@ form button {
 }
 
 form button:hover {
-    background-color: #005bb5;
+    background-color: #349208;
 }
 
 a {
-    color: #0066cc;
+    color: #00cc33;
     text-decoration: none;
 }
 
@@ -244,7 +250,7 @@ a:hover {
 }
 
 button, .add-btn {
-    background-color: #0066cc;
+    background-color: #00cc33;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -256,5 +262,5 @@ button, .add-btn {
 }
 
 button:hover, .add-btn:hover {
-    background-color: #005bb5;
+    background-color: #349208;
 }
